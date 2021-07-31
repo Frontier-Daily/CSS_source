@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>social media icon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section class="socialMedia">
+        <ul class="sci">
+            <li data-text="Facebook" data-color="#5a8afd">
+                <a href="https://www.facebook.com" class="facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li data-text="Youtube" data-color="#c4302b">
+                <a href="https://www.youtube.com" class="youtube" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+            </li>
+            <li data-text="Twitter" data-color="#9ec9ff">
+                <a href="https://www.twitter.com" class="twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li data-text="Instagram" data-color="#ee59c2">
+                <a href="https://www.instagram.com" class="instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </section>
+    <script src="vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".sci li a"), {
+		max: 30,
+		speed: 400,
+        glare: true,
+        "max-glare": 1,
+	});
+        let list = document.querySelectorAll('.sci li');
+        let bg = document.querySelector('.socialMedia');
+        list.forEach(el => {
+            el.addEventListener('mouseenter' , (event) => {
+                let color = event.target.getAttribute('data-color');
+                bg.style.backgroundColor = color;
+            })
+            el.addEventListener('mouseleave' , (event) => {
+                bg.style.backgroundColor = '#fff';
+            })
+        })
+    </script>
+</body>
+</html>
