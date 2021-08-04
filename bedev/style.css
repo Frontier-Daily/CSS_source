@@ -32,14 +32,12 @@ section .textBox {
     text-align: center;
     font-size: 12em;
     line-height: 1em;
-    /* color: #04f534; */
     color: #f59504;
     cursor: pointer;
 }
 
 .skew1 h2 {
     opacity: 0.6;
-    /* color: #f59504; */
     color: #04f534;
 }
 
