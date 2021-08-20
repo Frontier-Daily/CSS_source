@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AnimeJs TimeLine Animation</title>
+</head>
+<body>
+    <section>
+        <img src="stars.png" id="star">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="behind">
+        <h2 id="text">Anime<span>Js</span></h2>
+        <a href="#" id="btn">Play</a>
+        <img src="mountains_front.png" id="front">
+    </section>
+    <script src="anime.min.js"></script>
+    <script>
+        var animation = anime.timeline({
+         autoplay : false
+        });
+        animation
+        .add({
+            targets :"#btn",
+            top: '1500px', // '100px' 반대방향. 위로 올라감.
+            duration : 500,
+            easing: 'easeInOutSine'
+        })
+
+        .add({
+            targets :"#star",
+            top: '0px', // '100px' 반대방향. 위로 올라감.
+            duration : 1000,
+            easing: 'easeInOutSine'
+        })
+
+        .add({
+            targets :"#behind",
+            bottom: '0px', // '100px' 반대방향. 위로 올라감.
+            duration : 1000,
+            easing: 'easeInOutSine'
+        })
+
+        .add({
+            targets :"#moon",
+            top: '0px', 
+            duration : 1000,
+            easing: 'easeInOutBack' // 'easeInOutSine'
+        })
+
+        .add({
+            targets :"#front",
+            bottom: '0px', // '100px' 반대방향. 위로 올라감.
+            duration : 1000,
+            easing: 'easeInOutSine'
+        })
+
+        .add({
+            targets :"#text",
+            duration : 1000,
+            marginRight: 0,
+            easing: 'easeInOutBack'
+        })
+
+        .add({
+            targets :"#btn",
+            top: '50%', 
+            duration : 1000,
+            easing: 'easeInOutBack'
+        })
+        document.querySelector(`#btn`).onclick = animation.play;
+
+    </script>
+</body>
+</html>
