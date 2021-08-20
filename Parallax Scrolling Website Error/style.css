@@ -31,13 +31,20 @@ header .logo
     text-decoration: none;
     font-size : 2em;
     text-transform : uppercase;
-    letter-spacing : 2em;
+/*     letter-spacing : 2em; */
+    letter-spacing : 2px;
 }
 header ul
 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* header ul li 가 오류 원본에선 아에 생략이 되었었음.. 새로추가함 */
+header ul li
+{
+    list-style: none;
+    margin-left :20px;
 }
 header ul li a
 {
@@ -56,8 +63,12 @@ section
 {
     position: relative;
     width : 100%;
-    height : 100%;
-    padding : 100%;
+/*  height : 100%;
+    padding : 100%;  
+    치명적인 에러 결과를 낳았음..*/
+    height : 100vh;
+    padding : 100px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,7 +81,8 @@ section ::before
     bottom : 0;
     width: 100%;
     height : 100px;
-    background: linear-gradient(to top, #1c0522,#fff, transparent);
+/*     background: linear-gradient(to top, #1c0522,#fff, transparent); */
+    background: linear-gradient(to top, #1c0522,#fff);
     z-index : 1000;
 }
 section img
@@ -99,7 +111,7 @@ section img#front
     white-space : nowrap;
     font-size: 7.5vw;
     z-index: 9;
-
+/*     transform: translateY(100px); */
 }
 #btn
 {
@@ -115,7 +127,8 @@ section img#front
 .sec
 {
     position: relative;
-    padding : 100%;
+/*     padding : 100%; */
+    padding : 100px;
     background: #1c0522;
 }
 .sec h2
@@ -129,12 +142,3 @@ section img#front
     font-size : 1em;
     color : #fff;
 }
-/* section img#stars
-{
-    
-}
-section img#behind
-{
-    
-}
-*/
