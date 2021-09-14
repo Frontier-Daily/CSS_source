@@ -1,0 +1,46 @@
+*
+{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;  
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    position :relative;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items : center;  */
+}
+.container .card
+{
+    position : relative;
+    width: 600px;
+    height : 350px;
+    margin : 20px;
+    display: flex;
+    transition : 0.5s;
+    justify-content: flex-start;
+    align-items : center;
+    background: linear-gradient(45deg,#1a2f3f, #7094ce);
+}
+.container .card img
+{
+    position : absolute;
+    bottom : 0; 
+    left : 50%;
+    transform: translateX(-50%);
+    height : 400px;
+    transition : 0.5s
+}
+.container .card:hover img
+{
+    left : 73%;
+    height : 500px;
+}
