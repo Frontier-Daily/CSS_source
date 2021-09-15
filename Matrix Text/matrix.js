@@ -21,7 +21,6 @@ const theColors = ['#cefbe4', '#81ec72', '#5cd646', '#54d13c', '#4ccc32', '#43c7
 
 function drawStrip(x, y) {
     for (let k = 0; k <= 20; k++) {
-        const textStrip = ['Y', 'O', 'U', 'A', 'R', 'E', 'A', 'W', 'E', 'S', 'O', 'M', 'E'];
         const randChar = textStrip[Math.floor(Math.random()*textStrip.length)];
         if (context.fillText) {
             switch (k) {
