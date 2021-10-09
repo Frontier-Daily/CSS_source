@@ -382,7 +382,7 @@ body
     box-shadow: 0 7px 25px rgba(0,0,0,0.08);
     border-radius: 20px;
 }
-.recentOrders .imgBx
+.recentCustomers .imgBx
 {
     position :relative;
     width : 40px;
@@ -399,7 +399,7 @@ body
     height : 100%;
     object-fit : cover;
 }
-.recentCustomer table text-replace:hover
+.recentCustomers table tr:hover
 {
     background : var(--blue);
     color : var(--white);
@@ -408,3 +408,20 @@ body
 {
     padding : 12px 10px;
 }
+.recentCustomers table tr td h4
+{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+.recentCustomers table tr td h4 span
+{
+    font-size : 14px;
+    color : var(--black2);
+}
+.recentCustomers table tr:hover td h4 span
+{
+    color : var(--white);
+}
+
+/* responsive design */
