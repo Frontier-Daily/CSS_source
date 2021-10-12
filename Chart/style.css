@@ -70,7 +70,7 @@ body
     text-decoration: none;
     color : var(--white);
 }
-.navigation ul li:hover a
+.navigation ul li:hover a,
 .navigation ul li.hovered a
 {
     color: var(--blue);
