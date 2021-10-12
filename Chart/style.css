@@ -51,7 +51,8 @@ body
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
-.navigation ul li:hover
+.navigation ul li:hover,
+.navigation ul li.hovered a
 {
     background: var(--white);
 }
@@ -70,7 +71,7 @@ body
     color : var(--white);
 }
 .navigation ul li:hover a
-/* .navigation ul li.hovered a */
+.navigation ul li.hovered a
 {
     color: var(--blue);
 }
