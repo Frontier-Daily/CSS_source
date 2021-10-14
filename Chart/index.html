@@ -12,7 +12,7 @@
         <div class="navigation">
             <ul>
                 <li>
-                    <a href="a">
+                    <a href="#">
                         <span class="icon">
                             <ion-icon name="logo-apple"></ion-icon>
                         </span>
@@ -20,7 +20,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="a">
+                    <a href="#">
                         <span class="icon">
                             <ion-icon name="home-outline"></ion-icon>
                         </span>
@@ -28,7 +28,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="a">
+                    <a href="#">
                         <span class="icon">
                             <ion-icon name="people-outline"></ion-icon>
                         </span>
@@ -36,7 +36,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="a">
+                    <a href="#">
                         <span class="icon">
                             <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
                         </span>
@@ -44,7 +44,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="a">
+                    <a href="#">
                         <span class="icon">
                             <ion-icon name="help-circle-outline"></ion-icon>
                         </span>
@@ -52,7 +52,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="a">
+                    <a href="#">
                         <span class="icon">
                             <ion-icon name="settings-outline"></ion-icon>
                         </span>
@@ -60,7 +60,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="a">
+                    <a href="#">
                         <span class="icon">
                             <ion-icon name="lock-closed-outline"></ion-icon>
                         </span>
@@ -68,7 +68,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="a">
+                    <a href="#">
                         <span class="icon">
                             <ion-icon name="log-out-outline"></ion-icon>
                         </span>
@@ -135,6 +135,19 @@
                     </div>                    
                 </div>
             </div>
+
+            <!-- add chart -->
+            <div class="graphBox">
+                <!-- <h2></h2> -->
+                <!-- <div class="box"></div> -->
+                <div class="box">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="box">
+                    <canvas id="earning"></canvas>
+                </div>
+            </div>
+
 
             <!-- data list  -->
             <div class="details">
@@ -359,6 +372,9 @@
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="my_chart.js"></script>
     <script>
         // menuToggle
         let toggle = document.querySelector('.toggle');
