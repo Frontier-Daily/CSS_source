@@ -115,11 +115,33 @@ body
     animation : animateClouds 3.5s linear infinite;
     animation-delay:  calc(-1s * var(--i));
 }
+.fa-tree
+{
+    position: absolute;
+    bottom : 60px;
+    font-size: 2em;
+    z-index: 2;
+    color : #0d9e0d;
+    animation: animateCloudes 7s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+.fa-mountain
+{
+    position: absolute;
+    bottom : 0;
+    font-size: 10em;
+    color : #8b3c23;
+    animation: animateCloudes 15s linear infinite;
+    animation-delay: calc(-3s * var(--i));
+}
 @keyframes animateClouds
 {
     0%
     {
         transform: translateX(350px);
     }
-
+    100%
+    {
+        transform: translateX(-350px);
+    }
 }
