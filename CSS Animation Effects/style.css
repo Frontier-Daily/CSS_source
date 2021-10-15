@@ -23,6 +23,7 @@ body
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    border-radius: 30px;
 }
 .sun
 {
@@ -51,7 +52,7 @@ body
 .road::before
 {
     content : '';
-    position:absolute;
+    position: absolute;
     width : 100%;
     height : 10px;
     background: #0d9e0d;
@@ -78,5 +79,27 @@ body
     100%
     {
         background-position-x: -20px;
+    }
+}
+.fa-shuttle-van
+{
+    position : absolute;
+    bottom : 30px;
+    left : 30px;
+    z-index: 10;
+    color : #fff;
+    font-size: 3.5em;
+    -webkit-text-stroke : 2px #000;
+    animation : animateVan 0.2s linear infinite;
+}
+@keyframes aniamteVan
+{
+    0% ,100%
+    {
+        transform: translateY(0);
+    }
+    50%
+    {
+        transform: translateY(1px);
     }
 }
