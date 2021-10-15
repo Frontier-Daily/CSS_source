@@ -67,4 +67,16 @@ body
     background: repeating-linear-gradient(90deg,
     transparent 0, transparent 50%, #fff 50%, #fff 100%);
     background-size : 20px;
+    animation : animateRoad 0.2s linear infinite;
+}
+@keyframes animateRoad 
+{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: -20px;
+    }
 }
