@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <img src="bg.jpg" id="bg">
+        <img src="bats.png" id="bats">
+        <img src="castle.png" id="castle">
+        <img src="img.png" id="img">
+        <img src="wolf.png" id="wolf">
+        
+    </section>
+    <div class="sec">
+        <div class="content">
+            <h2>Happy HalloWeen</h2>
+            <p>
+                이 할로윈의 유래에 대해 가장 널리 알려진 설은 고대 켈트족이 죽음과 유령을 찬양하며 벌인 서우인(Samhain) 축제에서 비롯되었다는 설이다. 켈트인들은 1년이 12달이 아닌 10달로 이루어진 달력을 사용했고 한 해를 딱 4개의 기념일로 구분했다. 이 4개의 기념일 중 가장 중요한 것이 바로 한 해의 마지막이자 새해의 시작인 10월 31일의 서우인 축제였다. 11월 초순은 추분과 동지의 한가운데 즈음이기 때문에 겨울이 시작되는 때로 인식하였다. 서양만이 아니라 동양을 보아도, 24절기 중 입동이 11월 7일쯤에 온다. 그러한 이치로 로마에서도 11월 1일부터 겨울이라고 생각했다. 이 서우인 축제가 이후 서양의 기독교 문화에 의해 기독교화되었다는 것이 정설. 일부는 켈트족의 고대문화에서 유래된 것이 아니고 처음부터 기독교 문화의 축제였다고 주장하기도 한다.
+
+                켈트 전통에서는 1년을 겨울과 여름으로만 나누었고, 이 중 1년이 겨울부터 시작한다고 생각했다. 그러므로 겨울의 시작은 한 해의 시작이었으며, 한 해가 끝나고 새해가 시작되는 첫 밤에 저승의 문이 열려 조상들은 물론 온갖 이상한 것들까지 이승으로 나온다고 생각했다.
+
+                기독교가 전파되며 할로윈도 여러 가지 형태로 분화되었다. 아일랜드에서는 흔히 할로윈의 상징으로 자리잡은 '잭 오 랜턴(Jack O' Lantern)'이 탄생했는데, 천국과 지옥 양쪽에서 거부당한 영혼의 이야기에서 유래했다. 원래 아일랜드와 스코틀랜드에서 순무를 가지고 시작했으나 미국에서 순무 대신 잘 자라던 호박으로 대체한 것이 퍼져나갔다.
+
+                오늘날 흔히 떠올리는 '할로윈 데이' 는 미국의 축제와 유사하며, 거기에서 파생된 현대의 모습은 대략 할로윈을 핑계로 코스튬플레이 파티 및 행사를 즐기는 모습에 가깝다.
+            </p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#img",{
+            scrollTrigger : {
+                scrub : 0.5,
+            },
+            x : 1500,
+            y : 500,
+        })
+
+        gsap.from("#wolf",{
+            scrollTrigger : {
+                scrub : 0.5,
+            },
+            x : 400,
+        })
+
+
+        gsap.from("#castle",{
+            scrollTrigger : {
+                scrub : 0.5,
+            },
+            x : -100,
+        })
+
+        gsap.to("#bats",{
+            scrollTrigger : {
+                scrub : 0.5,
+            },
+            scale : 1.5,
+        })
+    </script>
+</body>
+</html>
