@@ -17,6 +17,7 @@
     <script src= "anime.min.js"></script>
     <script>
         const container = document.querySelector('.container')
+        // 다른 무작위 블록 만들기, 만들어서 넣는과정. 
         for(let i =0; i<=100; i++){
             const blocks = document.createElement('div');
             blocks.classList.add('block');
@@ -40,6 +41,7 @@
                 complete : animateBlocks
             })
         }
+        // 함수실행을 빼먹어서 실행이 안된적도있었다 ;
         animateBlocks();
     </script>
 </body>
