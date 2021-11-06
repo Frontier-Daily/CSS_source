@@ -49,3 +49,33 @@ h2 span
     background: #e80202;
     box-shadow: 10px 10px 50px rgba(0,0,0,0.2);
 }
+@media (max-width : 767px)
+{
+    .container
+    {
+        background: #e89f02;
+    }
+    .block
+    {
+        position:absolute;
+        width : 50px;
+        height : 100px;
+        background: #e89f02;
+        box-shadow: 10px 10px 50px rgba(0,0,0,0.2);
+    }
+}
+@media (max-width : 350px)
+{
+    .container
+    {
+        background: #e8d102;
+    }
+    .block
+    {
+        position:absolute;
+        width : 50px;
+        height : 100px;
+        background: #e8d102;
+        box-shadow: 10px 10px 50px rgba(0,0,0,0.2);
+    }
+}
