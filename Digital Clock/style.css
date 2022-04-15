@@ -1,64 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Orbitron', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #10101e;
+    min-height: 100vh;
+    background: #2f363e;
 }
 
-.datetime {
+#time {
+    display: flex;
+    gap: 40px;
     color: #fff;
-    background: #10101e;
-    width: 500px;
-    padding: 15px 10px;
-    border: 3px solid #2e94e3;
-    border-radius: 5px;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
-    transition: 0.5s;
-    transition-property: background, box-shadow;
 }
 
-.datetime:hover {
-    background: #2e94e3;
-    box-shadow: 0 0 30px #2e94e3;
-}
-
-.date {
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    letter-spacing: 3px;
-}
-
-.time {
-    font-size: 60px;
+#time .circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.time span:not(:last-child) {
+#time .circle svg {
     position: relative;
-    margin: 0 6px;
-    font-weight: 600;
-    text-align: center;
-    letter-spacing: 3px;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
 }
 
-.time span:last-child {
-    background: #2e94e3;
-    font-size: 30px;
-    font-weight: 600;
+#time .circle svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke: #191919;
+    stroke-width: 4;
+    transform: translate(5px,5px);
+}
+
+#time .circle svg circle:nth-child(2) {
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+}
+
+#time div {
+    position: absolute;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+#time div span {
+    position: absolute;
+    transform: translateX(-50%) translateY(-10px);
+    font-size: 0.35em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-top: 10px;
-    padding: 0 5px;
-    border-radius: 3px;
+}
+
+#time .ap {
+    position: relative;
+    font-size: 1em;
+    transform: translateX(-20px);
+}
+
+.dots {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+
+.dots::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    width: 15px;
+    height: 15px;
+    background: var(--clr);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--clr),
+    0 0 60px var(--clr);
 }
