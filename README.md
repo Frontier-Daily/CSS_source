@@ -9,5 +9,3 @@ CSS 효과 모음 입니다.<br>
 ![social media icon-min](https://user-images.githubusercontent.com/72447026/168873040-c8898ef9-6d10-422d-a1e4-cb81c6d34658.gif)
 3. [starry night](https://github.com/Frontier-Daily/CSS_source/tree/master/starry%20night)<br>
 ![starry night-min](https://user-images.githubusercontent.com/72447026/168873149-1d50abcd-a1a8-468b-b494-7d959031f944.gif)
-
-
